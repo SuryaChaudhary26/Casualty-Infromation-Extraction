@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block body %}
+<!-- --------------------mainbody-------------------- -->
+<div class="container my-5">
+	<form method="POST">
+		{% csrf_token %}
+		<div class="mb-3">
+			<label for="newsLinkForm" class="form-label">News Link</label>
+			{{ form.news_link }}
+			<div id="newshelp" class="form-text">Enter your link to extract information.</div>
+			<div>
+				Save
+				{{ form.isSave }}
+			</div>
+			
+		</div>
+
+		<a href="extraction"><button class="btn btn-primary" id="linksubmit">Submit</button></a>
+	</form>
+
+
+	{% if isData %}
+	<div class="extractcontainer col-sm-12" id="extractContainer">
+		<h2 class="card-header text-white bg-dark">Extracted items</h2>
+		<div class="card-body cardbodycontainer">
+			<div>Death Count: <span>{{ news.death }}</span></div>
+			<div>Injured Count: <span>{{ news.injury }}</span></div>
+			<div>Location: <span>{{ news.location }}</span></div>
+			<div>No of vehicles: <span>{{ news.vehicleNo }}</span></div>
+			<div>Vehicle Types: <span>{{ news.vehicleType }}</span></div>
+			<div>Vehicle Number: <span>{{ news.vehicleCode }}</span></div>
+			<div>Link: <span>{{ news.link }}</span></div>
+		</div>
+
+	</div>
+	{% endif %}
+</div>
+{% endblock %}
