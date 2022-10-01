@@ -9,8 +9,6 @@ Casualty information extraction project uses the news from the link extracted us
 * Open 127.0.0.1 in your browser to open the project 
 
 ### Contributors
-[Sanskar Amgain](https://github.com/Imsanskar)  
-[Sagar Timalsina](https://github.com/sgr45)  
-[Sandip Puri](https://github.com/Sandippuri)  
-[Sanjay Bhandari](https://github.com/shawn00-tech)  
-
+[Surya Chaudhary](https://github.com/SuryaNC022)  
+[Suraj Niroula](https://github.com/SurajNiroula)  
+[Roshan Jha](https://github.com/iam-roshanj)  
